@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Ilkou</title>
+    <!-- Link to the CSS file (Lab 1 will focus on styling) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section (Lab 1) -->
+    <header>
+        <h1>Anna Ilkou</h1>
+        <p>Electrical & Computer Engineer student</p>
+        <!-- Placeholder image for the profile picture -->
+        <img src="anna_image.jpg" alt="Anna Ilkou" width="150">
+    </header>
+
+    <!-- About Me Section (Lab 1) -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+        Hey! My name is <strong>Anna Ilkou</strong> and I am an Electrical and Computer Engineering student at the University of Western Macedonia in <ins>Kozani</ins>.
+        Alongside my academic interests, I enjoy <em>traveling</em> and experiencing different cultures, which keeps me adaptable and open-minded. I am a person that would always say yes to new challenges and opportunities, as I believe they are the best way to grow and learn. <del> ;)</del>
+        </p>
+    </section>
+
+    <!-- Resume Section (Lab 1) -->
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <h3>Education</h3>
+        <ul>
+            <li><strong>Integrated MEng in Electrical and Computer Engineering</strong>, University of Western Macedonia (Oct 2023 - Present) - Specialization: Computer and Electronic Engineering.</li>
+            <li><strong>Erasmus+ Exchange Program (Studies)</strong>, Universidad Politécnica de Madrid (Sep 2025 - Jun 2026).</li>
+        </ul>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FBp2g4_cjAM" title="University Department Presentation" frameborder="0" allowfullscreen style="border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-top: 15px; margin-bottom: 20px;"></iframe>
+        <p><em>* Short presentation of the Electrical and Computer Engineering department.</em></p>
+
+        <h3>Skills & Languages</h3>
+        <ul>
+            <li><strong>Programming:</strong> C, Java, C++, Python</li>
+            <li><strong>Tools & Software:</strong> Git, GitHub, MATLAB, VS Code</li>
+            <li><strong>Languages:</strong> Greek (Native), English (C2), Spanish (B2), French (B2)</li>
+        </ul>
+
+        <h3>Extracurricular</h3>
+        <ul>
+            <li>Women Entrepreneurs Shaping Economic Participation, Luxembourg</li>
+            <li>Explore Minds: Mental Health, Sports & Digital Detox, Poland</li>
+            <li>Young Entrepreneurship, Romania</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section (Lab 1) -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my projects and skills.</p>
+        <a href="https://github.com/anna-ilk" target="_blank">View on GitHub</a>
+
+        <h3>Autonomous E-puck Robot Controller (June 2026)</h3>
+        <p>
+            Designed and evaluated Static and Continuous-Time Recurrent Neural Networks (CTRNN) for an e-puck robot. Programmed the robot in C++ to autonomously navigate a labyrinth and
+            actively manage battery levels by seeking charging station.
+        </p>
+        <img src="IRSIM_maze.png" alt="Anna Ilkou" width="350">
+        <br>
+        <a href="https://github.com/anna-ilk" target="_blank">View on GitHub</a>
+
+        <h3>Katherine G. Johnson Web Page (May 2026)</h3>
+        <p>
+            Co-designed and built a responsive website for a Women in STEM project at UPM. Engineered a layered, twinkling star-field background and a rotating moon using CSS keyframe animations.
+        </p>
+        <a href="https://anna-ilk.github.io/katherine-johnson-web-page/" target="_blank">View Live Website</a>
+    
+        <h3>Linear Power Supply Design (March 2025)</h3>
+        <p>
+            Designed a 5V/500mA regulated linear power supply from a 230V AC input, incorporating a step-down transformer, bridge rectifier, and an LM7805 voltage regulator.
+        </p>
+    </section>
+
+    <!-- Contact Me Section (Lab 3) -->
+    <section id="contact">
+        <h3 class="h3 form-title">Contact Form</h3>
+    
+        <!-- Thank you message -->
+        <div id="thankYouMessage" style="display: none;">
+            <p>Thank you for your message! I will get back to you soon.</p>
+        </div>
+    
+        <!-- Form setup for Netlify -->
+        <form name="contactForm" method="POST" netlify netlify-honeypot="bot-field" id="contactForm" data-netlify="true">
+            <input type="hidden" name="form-name" value="contactForm">
+    
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+    
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+    
+            <!-- Add the form-btn class here -->
+            <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer Section (Lab 1) -->
+    <footer>
+        <p>&copy; 2026 Anna Ilkou</p>
+        <p>Email: <strong>annilk000@gmail.com</strong></p>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/anna-ilkou-5b66ab302" target="_blank">LinkedIn</a>
+    </footer>
+
+    <!-- Σύνδεση με το αρχείο JavaScript -->
+    <script src="formValidation.js"></script>
+</body>
+</html>
